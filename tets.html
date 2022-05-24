@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Icon/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="css/test.css">
+
+    <title>add element</title>
+</head>
+<body>
+
+
+<div class="container pattern mt-5">
+    <!-- start div contain add question manaual with answer -->
+    <!-- start one row contain word question and two dropdown and delete icon -->
+    <div class="add">
+
+    <div class="row">
+
+        <h3 class="col-4">Question <span class="inc">1</span></h3>
+
+        <!-- start tow dropdown -->
+       <!--start select the true answer -->
+        <div class="col-3">
+            
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Correct:A</option>
+                <option value="1">Correct:B</option>
+                <option value="2">Correct:C</option>
+                <option value="3">Correct:D</option>
+              </select>
+        </div>
+         <!-- end select the type of question -->
+            <!-- start select the type of question -->
+          <div class="col-3">
+            <select class="form-select myselect" aria-label="Default select example">
+                <option value="0" >MCQ</option>
+                <option value="1">T/F</option>
+            
+              </select>
+         </div>
+          <!-- end select the type of question -->
+        
+
+         <div class="col-2"> 
+             <button class="removeQuestion"><i class="fa-solid fa-trash"></i></button>       
+         </div>
+
+    </div>
+    <!-- end one row contain word question and two dropdown and delete icon-->
+
+    <!-- start input question with sol as 4 input in order list  -->
+    <form class="row mt-3">
+        <input type="text" class="col-12 form-control rounded" placeholder="type your Question">
+
+        <div class="col-6">
+            <label for="A">A)</label>
+            <input type="text" id="A" class="col-12 form-control ans rounded mt-2" placeholder="type your Answer"><br>
+            <label for="B">B)</label>
+            <input type="text"id="B" class="col-12 form-control ans rounded mt-2" placeholder="type your Answer">
+            
+        </div>
+
+        <div class="col-6 trueFalse">
+            <label for="A">C)</label>
+            <input type="text" class="col-12 form-control ans rounded mt-2" placeholder="type your Answer"><br>
+            <label for="A">D)</label>
+            <input type="text" class="col-12 form-control ans rounded mt-2" placeholder="type your Answer">
+            
+        </div>
+    </form>
+    <!-- end input question with sol as 4 input in order list  -->
+
+</div> 
+ <!-- end div contain add question manaual with answer -->
+
+    <!-- start row add Question -->
+    <div class="row mt-5">
+
+        <h3 class="col-10">Add A Question</h3>
+
+        <button class="col-2 addQuestion"><i class="fa-solid fa-plus"></i></button>
+
+    </div>
+   <!-- end row add Question -->
+</div>
+<!-- end container div -->
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<script src="js/test.js"></script>
+
+</body>
+</html>
